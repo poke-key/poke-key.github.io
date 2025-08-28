@@ -25,21 +25,21 @@ export default function ProjectsPage() {
       link: "https://github.com/poke-key/Rust-Compiler",
     },
     {
-      title: "vehicle-net (rust/next.js)",
+      title: "vehicle-net (solidity/next.js)",
       description:
         "Open source decentralized vehicle marketplace with smart contracts for vehicle registration & data monetization, implementing HD wallet derivation in Rust for cryptographically signed condition reports and trustless automotive transactions. Vehicle-Net is interacted with on a full-stack Web3 application with Next.js frontend & Rust CLI, enabling vehicle owners to list GPS/diagnostic data products on-chain with streaming payments and buyers to verify authentic vehicle data through Ethereum blockchain verification.",
       image: "/ethereum_blockchain.png",
       link: "https://github.com/poke-key/vehicle-net",
     },
     {
-      title: "CUDA Ray-Tracer (cuda c++)",
+      title: "CUDA Ray-Tracer (cuda, SDL)",
       description:
         "Built a real-time 3D ray tracer in CUDA C++ with GPU-accelerated ray-triangle intersections and parallel kernel execution. Developed an interactive renderer using SDL2 and TinyObjLoader with real-time model rotation and camera zoom. Implemented Möller-Trumbore ray casting, shadow rays, and Phong lighting with accurate normals and attenuation.",
       image: "/ray_tracer.png",
       link: "https://github.com/poke-key/CUDA-Accelerated-Ray-Tracer",
     },
     {
-      title: "Congress-IQ (next.js/typescript)",
+      title: "Congress-IQ (aws/typescript)",
       description:
         "Built a full-stack application using Shadcn UI, OAuth 2.0, and Convex database, for storing U.S Congressional bills using congress.gov RESTful API and HTM file bill storage. Integrated AWS Elasticsearch for semantic search with 90%+ search accuracy and utilized OpenRouter LLMs for bill summarization and Q&A allowing users to quickly understand, search and understand impacts of bills with AI-driven insights.",
       image: "/congress_iq.png",
