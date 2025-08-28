@@ -1,5 +1,6 @@
 import { Sidebar } from "@/components/sidebar"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ThemeToggle } from "@/components/theme-toggle"
 import Image from "next/image"
 
 export default function ProjectsPage() {
@@ -50,6 +51,9 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Sidebar />
+      <div className="fixed top-4 right-4 z-50 lg:right-8">
+        <ThemeToggle />
+      </div>
       <main className="ml-0 lg:ml-64 p-8">
         <section className="max-w-4xl">
           <h2 className="text-2xl font-bold mb-6 text-foreground">projects</h2>

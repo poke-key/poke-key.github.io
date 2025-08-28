@@ -21,23 +21,33 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-300 dark:bg-navy-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-navy-900"
-      style={{
-        backgroundColor: isDark ? '#1e2a3a' : '#e5e7eb'
-      }}
+      className={`relative inline-flex h-10 w-[72px] items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        isDark 
+          ? 'bg-gray-800 focus:ring-blue-500' 
+          : 'bg-gray-200 focus:ring-gray-300'
+      }`}
       aria-label="Toggle theme"
     >
+      {/* Background icons - only show when not covered by thumb */}
+      <span className={`absolute left-2 transition-opacity duration-300 ${isDark ? 'opacity-30' : 'opacity-0'}`}>
+        <Sun className="h-4 w-4 text-orange-400" />
+      </span>
+      
+      <span className={`absolute right-2 transition-opacity duration-300 ${isDark ? 'opacity-0' : 'opacity-30'}`}>
+        <Moon className="h-4 w-4 text-blue-400" />
+      </span>
+      
+      {/* Moving thumb with active icon */}
       <span
-        className={`inline-block h-6 w-6 transform rounded-full transition-transform duration-200 ${
-          isDark ? "translate-x-7" : "translate-x-1"
+        className={`relative z-10 inline-flex h-8 w-8 items-center justify-center rounded-full shadow-md transform transition-transform duration-300 ${
+          isDark ? "translate-x-8 bg-gray-700" : "translate-x-1 bg-white"
         }`}
-        style={{
-          backgroundColor: isDark ? '#f8fafc' : '#1e2a3a'
-        }}
       >
-        <span className="flex h-full w-full items-center justify-center">
-          {isDark ? <Moon className="h-3 w-3 text-slate-300" /> : <Sun className="h-3 w-3 text-yellow-500" />}
-        </span>
+        {isDark ? (
+          <Moon className="h-4 w-4 text-blue-400" />
+        ) : (
+          <Sun className="h-4 w-4 text-orange-400" />
+        )}
       </span>
     </button>
   )

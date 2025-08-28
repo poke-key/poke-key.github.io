@@ -1,9 +1,13 @@
 import { Sidebar } from "@/components/sidebar"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Resume() {
   return (
     <div className="min-h-screen bg-background">
       <Sidebar />
+      <div className="fixed top-4 right-4 z-50 lg:right-8">
+        <ThemeToggle />
+      </div>
       <main className="ml-64 p-8">
         <div className="max-w-4xl mx-auto">
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
@@ -36,7 +40,7 @@ export default function Resume() {
                 <div>
                   <span className="font-medium text-foreground">Frameworks:</span>
                   <span className="text-muted-foreground ml-2">
-                    React.js, Node.js, Express.js, Next.js, .NET, Windows Form, Qt, Arduino, Flask, Electron, PostgreSQL
+                    React.js, Node.js, Express.js, Next.js, .NET, Windows Form, Qt, Arduino, Flask, Electron, PostgreSQL, Web3.js, Ethereum
                   </span>
                 </div>
                 <div>

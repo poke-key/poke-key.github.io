@@ -28,6 +28,8 @@ export default function Home() {
       "Docker",
       "Kubernetes",
       "Flask",
+      "Web3.js",
+      "Ethereum",
     ],
     tools: [
       "Git",
@@ -201,8 +203,16 @@ export default function Home() {
                     <Image src="/Flask-Dark.svg" alt="Flask Logo" width={32} height={32} className="rounded" />
                     <span className="text-xs font-medium text-foreground">Flask</span>
                   </div>
+                  <div className="flex flex-col items-center gap-1 p-2">
+                    <Image src="/web3js-logo.svg" alt="Web3.js Logo" width={32} height={32} className="rounded" />
+                    <span className="text-xs font-medium text-foreground">Web3.js</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-1 p-2">
+                    <Image src="/ethereum-logo.svg" alt="Ethereum Logo" width={32} height={32} className="rounded" />
+                    <span className="text-xs font-medium text-foreground">Ethereum</span>
+                  </div>
                   {skills.frameworks
-                    .filter((skill) => !["React.js", ".NET", "Windows Form", "Arduino", "Electron", "PostgreSQL", "shadcn/ui", "Docker", "Kubernetes", "Flask"].includes(skill))
+                    .filter((skill) => !["React.js", ".NET", "Windows Form", "Arduino", "Electron", "PostgreSQL", "shadcn/ui", "Docker", "Kubernetes", "Flask", "Web3.js", "Ethereum"].includes(skill))
                     .map((skill, index) => (
                       <Badge key={index + 1} variant="secondary" className="font-medium">
                         {skill}
