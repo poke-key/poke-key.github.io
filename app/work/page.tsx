@@ -12,7 +12,7 @@ export default function WorkPage() {
           <div className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Full Stack Software Engineer Intern</CardTitle>
+                <CardTitle>Full Stack Software Engineer</CardTitle>
                 <CardDescription className="text-primary font-medium">Nubroad LLC</CardDescription>
               </CardHeader>
               <CardContent>
