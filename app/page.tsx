@@ -198,7 +198,7 @@ export default function Home() {
                     <span className="text-xs font-medium text-foreground">Kubernetes</span>
                   </div>
                   <div className="flex flex-col items-center gap-1 p-2">
-                    <Image src="/flask-logo.svg" alt="Flask Logo" width={32} height={32} className="rounded" />
+                    <Image src="/Flask-Dark.svg" alt="Flask Logo" width={32} height={32} className="rounded" />
                     <span className="text-xs font-medium text-foreground">Flask</span>
                   </div>
                   {skills.frameworks
