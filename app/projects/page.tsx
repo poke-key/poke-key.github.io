@@ -31,6 +31,13 @@ export default function ProjectsPage() {
       image: "/ethereum_blockchain.png",
       link: "https://github.com/poke-key/vehicle-net",
     },
+    {
+      title: "CUDA Ray-Tracer (cuda c++)",
+      description:
+        "Built a real-time 3D ray tracer in CUDA C++ with GPU-accelerated ray-triangle intersections and parallel kernel execution. Developed an interactive renderer using SDL2 and TinyObjLoader with real-time model rotation and camera zoom. Implemented Möller-Trumbore ray casting, shadow rays, and Phong lighting with accurate normals and attenuation.",
+      image: "/ray_tracer.png",
+      link: "https://github.com/poke-key/CUDA-Accelerated-Ray-Tracer",
+    },
   ]
 
   return (
