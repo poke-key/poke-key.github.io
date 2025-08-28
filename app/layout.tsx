@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Kunal Shrivastav",
-  description: "Full Stack Software Engineer Intern",
+  description: "Full Stack Software Engineer",
   generator: "v0.app",
 }
 
