@@ -38,6 +38,13 @@ export default function ProjectsPage() {
       image: "/ray_tracer.png",
       link: "https://github.com/poke-key/CUDA-Accelerated-Ray-Tracer",
     },
+    {
+      title: "Congress-IQ (next.js/typescript)",
+      description:
+        "Built a full-stack application using Shadcn UI, OAuth 2.0, and Convex database, for storing U.S Congressional bills using congress.gov RESTful API and HTM file bill storage. Integrated AWS Elasticsearch for semantic search with 90%+ search accuracy and utilized OpenRouter LLMs for bill summarization and Q&A allowing users to quickly understand, search and understand impacts of bills with AI-driven insights.",
+      image: "/congress_iq.png",
+      link: "https://github.com/poke-key/congressIQ",
+    },
   ]
 
   return (
