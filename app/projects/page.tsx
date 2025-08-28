@@ -24,6 +24,13 @@ export default function ProjectsPage() {
       image: "/rust-compiler-abstract-syntax-tree-programming.png",
       link: "https://github.com/poke-key/Rust-Compiler",
     },
+    {
+      title: "vehicle-net (rust/next.js)",
+      description:
+        "Open source decentralized vehicle marketplace with smart contracts for vehicle registration & data monetization, implementing HD wallet derivation in Rust for cryptographically signed condition reports and trustless automotive transactions. Vehicle-Net is interacted with on a full-stack Web3 application with Next.js frontend & Rust CLI, enabling vehicle owners to list GPS/diagnostic data products on-chain with streaming payments and buyers to verify authentic vehicle data through Ethereum blockchain verification.",
+      image: "/ethereum_blockchain.png",
+      link: "https://github.com/poke-key/vehicle-net",
+    },
   ]
 
   return (
