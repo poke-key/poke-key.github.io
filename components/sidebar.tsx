@@ -14,7 +14,7 @@ export function Sidebar() {
   ]
 
   return (
-    <aside className="fixed left-0 top-0 z-40 h-screen w-64 bg-background border-r border-border">
+    <aside className="fixed left-0 top-0 z-40 h-screen w-64 bg-background border-r border-border hidden lg:block">
       <div className="flex h-full flex-col p-6">
         <header className="mb-8">
           <div className="mb-4">
@@ -87,9 +87,6 @@ export function Sidebar() {
         </nav>
 
       </div>
-
-      {/* Font Awesome for icons */}
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     </aside>
   )
 }

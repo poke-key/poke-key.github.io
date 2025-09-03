@@ -47,11 +47,84 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Sidebar />
-      <div className="fixed top-4 right-4 z-50 lg:right-8">
+      
+      {/* Mobile header */}
+      <div className="lg:hidden sticky top-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <div className="flex items-center justify-between p-4">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/linkedin_pfp.jpg"
+              alt="Kunal Shrivastav"
+              width={40}
+              height={40}
+              className="rounded-full object-cover"
+            />
+            <div>
+              <h1 className="text-lg font-bold text-foreground">kunal shrivastav</h1>
+              <div className="flex space-x-2 mt-1">
+                <a
+                  href="https://www.linkedin.com/in/kunal-shrivastav/"
+                  target="_blank"
+                  title="LinkedIn"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <i className="fab fa-linkedin text-sm"></i>
+                </a>
+                <a
+                  href="https://github.com/poke-key"
+                  target="_blank"
+                  title="GitHub"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <i className="fab fa-github text-sm"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/president_50kunal.shrivastav/"
+                  target="_blank"
+                  title="Instagram"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <i className="fab fa-instagram text-sm"></i>
+                </a>
+                <a
+                  href="mailto:kunalshrivastav345@gmail.com"
+                  title="Email"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <i className="fas fa-envelope text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ThemeToggle />
+        </div>
+        
+        {/* Mobile navigation */}
+        <div className="px-4 pb-4">
+          <nav className="flex space-x-4">
+            <a href="/" className="px-3 py-2 rounded-md text-sm font-medium bg-accent text-accent-foreground">
+              home
+            </a>
+            <a href="/projects" className="px-3 py-2 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent/50">
+              projects
+            </a>
+            <a href="/resume" className="px-3 py-2 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent/50">
+              resume
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      {/* Desktop theme toggle */}
+      <div className="hidden lg:block fixed top-4 right-8 z-50">
         <ThemeToggle />
       </div>
-      <main className="ml-0 lg:ml-64 p-8">
-        <div className="max-w-4xl space-y-12">
+      
+      <main className="ml-0 lg:ml-64 p-4 lg:p-8">
+        <div className="max-w-4xl space-y-8 lg:space-y-12">
           <section>
             <h2 className="text-2xl font-bold mb-6 text-foreground">work history</h2>
             <div className="space-y-6">
@@ -105,7 +178,7 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-foreground">languages</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                   <div className="flex flex-col items-center gap-1 p-2">
                     <Image src="/python-logo.svg" alt="Python Logo" width={32} height={32} className="rounded" />
                     <span className="text-xs font-medium text-foreground">Python</span>
@@ -162,7 +235,7 @@ export default function Home() {
 
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-foreground">frameworks</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                   <div className="flex flex-col items-center gap-1 p-2">
                     <Image src="/react-logo.svg" alt="React Logo" width={32} height={32} className="rounded" />
                     <span className="text-xs font-medium text-foreground">React.js</span>
@@ -223,7 +296,7 @@ export default function Home() {
 
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-foreground">developer tools</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                   <div className="flex flex-col items-center gap-1 p-2">
                     <Image src="/git-logo.svg" alt="Git Logo" width={32} height={32} className="rounded" />
                     <span className="text-xs font-medium text-foreground">Git</span>
