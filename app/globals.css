@@ -120,3 +120,29 @@
     @apply bg-background text-foreground font-mono;
   }
 }
+
+/* ---- Theme toggle: circular reveal via the View Transitions API ---- */
+/* Disable the default cross-fade so the incoming theme is painted as a
+   solid layer that the clip-path circle wipes in from the toggle button. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Outgoing theme sits underneath; incoming theme is revealed on top. */
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Reduced-motion users get an instant, snapshot-free switch. */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}

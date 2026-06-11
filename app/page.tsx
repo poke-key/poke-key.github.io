@@ -141,7 +141,7 @@ export default function Home() {
                     <div>
                       <CardTitle>Full Stack Software Engineer</CardTitle>
                       <CardDescription className="text-primary font-medium">
-                        Nubroad LLC • June 2023 – Present
+                        Nubroad LLC • June 2024 – November 2025
                       </CardDescription>
                     </div>
                   </div>
